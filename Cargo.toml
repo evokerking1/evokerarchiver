@@ -1,0 +1,18 @@
+[package]
+name = "evokerarchiver"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", features = ["rustls-tls"] }
+url = "2"
+scraper = "0.24"
+clap = { version = "4", features = ["derive"] }
+dashmap = "6"
+chrono = "0.4"
+uuid = { version = "1", features = ["v4"] }
+warp = "0.3"
+rusqlite = { version = "0.31", features = ["bundled"] }
+ratatui = "0.28"
+crossterm = "0.27"
